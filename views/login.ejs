@@ -1,0 +1,36 @@
+<%- include ('./includes/header')%>
+<link rel="stylesheet" href="/css/style_login_register.css">
+<body>
+<h2 class="text-header text-center">[<sup>.</sup>} talento.tms</h2>
+<section class="container-login">
+    <h4 class="text-center">Log in</h4>
+    <form  action="/login" method="POST">
+        <input type="email"     placeholder="email" name ="email">
+        <input type="password"  placeholder="password" name="password" >
+        <div class="row">
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck" name="Remember_me">
+                    <label class="form-check-label" for="defaultCheck" style="margin-left:3px">
+                        Remember me
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <a href="#">Forgot your password?</a>
+            </div>
+        </div>
+        <div class="btn btn-primary btn-lg btn-block" id ="btn-connect">
+            Login
+        </div>
+        <input type ="submit" value="login" class="btn btn-primary btn-lg btn-block">
+    </form>
+    <p class="text-center">You do not have an account? <a href="/register"> Contact us</a> </p>
+    <%- include ("./includes/errorlogin.ejs")%>
+</section>
+<script  src="/js/jquery-2.1.1.min.js"></script>
+<script  src="/js/bootstrap.min.js"></script>
+<script  src="/js/main.js"></script>
+<script>
+    $('.alert').alert()
+</script>

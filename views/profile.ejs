@@ -1,0 +1,15 @@
+<%- include ('./includes/header')%>
+<body>
+<%- include("./parts/navbar") %>
+<% if ( users.length ==0){%>
+    this user is not exist
+    <a href="/login">login</a>
+<% } %>
+
+    <%
+    var email =users.email
+    var password = users.password
+    %>
+    email <%= email%> password <%= password%>
+</body>
+</html>

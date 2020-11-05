@@ -1,0 +1,23 @@
+<%- include ('./includes/header')%>
+<body>
+    <% if ( users.length ==0){ %>
+        this user is not exist
+    <% } %>
+
+
+    <ul class="list-unstyledz">
+        <%
+        for (let user of Object.keys(users)) {
+            var value = users[user]; %>
+            <li> <%= user %> <%= value %>  </li>
+       <% } //console.log("key "+ user +"value "+ value); %>
+    </ul>
+
+
+
+
+
+
+
+</body>
+</html>

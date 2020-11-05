@@ -1,0 +1,21 @@
+<%- include ('./includes/header')%>
+<link rel="stylesheet" href="/css/style_login_register.css">
+<body>
+<h2 class="text-header text-center">[<sup>.</sup>} talento.tms</h2>
+<section class="container-login">
+    <h4 class="text-center">Register</h4>
+    <form  action="/register" method="POST">
+        <input type="text"     placeholder="username" name ="username">
+        <input type="email"     placeholder="email" name ="email">
+        <input type="password"  placeholder="password" name ="password">
+        <input type="password"  placeholder="confirm password" name ="confirm_password">
+        <input type ="submit"   value="Register" class="btn btn-primary btn-lg btn-block">
+    </form>
+    <%- include ("./includes/errorlogin.ejs")%>
+</section>
+
+</body>
+<script  src="js/jquery-2.1.1.min.js"></script>
+<script  src="js/bootstrap.min.js"></script>
+<script  src="js/main.js"></script>
+</html>

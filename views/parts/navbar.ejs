@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/">
+      <span>Nabi</span>
+      <span>Kadir</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link link1" href="/" ><i class ="fa  fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link2" href="/booksClass"><i class ="fa fa-gamepad"></i> books class</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link link2" href="/authors"><i class ="fa fa-gamepad"></i> authors</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link link3" href="/login"><i class ="fa fa-file-movie-o"></i> login</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link link4" href="/singUp"> <i class ="fa fa-book"></i> singUp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link5" href="/admin/add"> <i class="fa fa-paint-brush"> Add product</i></a>
+        </li>
+      </ul>
+        <% let page = getNextPage()%>
+        <a href="<%=page%>">
+            <img src="/images/login.png" class="rounded" alt="image profile">
+        </a>
+
+    </div>
+  </nav><!-- XXX: End nav  -->
+<%
+    function getNextPage(){
+        if (true){
+            return "/login"
+        }return "/register"
+    }
+%>
+<style>
+    img {
+        width: 32px;
+        height: 32px;
+    }
+</style>

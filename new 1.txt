@@ -1,0 +1,5 @@
+   <ul class="list-unstyled">
+        <%  for (let user of users){ %>
+            <li> email  :  <%= user.email %> password : <%= user.password %></li>
+        <% }%>
+    </ul>
